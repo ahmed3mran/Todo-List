@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!--// css link //-->
+    <!-- Remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--// Remix icon //-->
+
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table">
+        <div class="head">
+          <h1>مهامي</h1>
+          <i id="add-tasks" class="ri-add-circle-line add-tasks"></i>
+        </div>
+        <div id="tasks" class="tasks">
+          <div class="task">
+            <div class="task-content">
+              <div class="content">
+                <h2>مهامك</h2>
+                <div class="date">
+                  <i class="ri-calendar-todo-fill calender-todo"></i>
+                  <p>15/20/2022</p>
+                </div>
+              </div>
+              <div class="icons">
+                <i class="ri-delete-bin-5-fill"></i>
+                <i class="ri-checkbox-circle-fill"></i>
+                <i class="ri-edit-2-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "El Messiri", sans-serif;
+}
+
+html {
+  direction: rtl;
+}
+body {
+  height: 100%;
+
+  /* background: linear-gradient(30deg, #6f22ae 1%, #3e0089 100%) no-repeat ; */
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --main-color: #222831;
+  --second-color: #31363f;
+  --aqua-color: #76abae;
+  --primary-color: #eeeeee;
+}
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: fit-content;
+  background-color: var(--second-color);
+  width: 90%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.table .head {
+  position: relative;
+}
+.table .head h1 {
+  background-color: var(--aqua-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+}
+.table .head .add-tasks {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 44px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.table .head .add-tasks:hover {
+  color: var(--second-color);
+  transition: 0.2s;
+}
+.tasks {
+  padding: 10px;
+  background-color: var(--primary-color);
+  margin: 10px 0;
+  border-radius: 4px;
+}
+.task {
+  background-color: #5ba8ac5c;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.done {
+  background-color: var(--aqua-color);
+}
+
+.task-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-content h2 {
+  font-size: 23px;
+}
+.task-content .date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.task-content .date i {
+  font-size: 16px;
+  font-weight: bold;
+}
+.task-content .date p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  direction: ltr;
+}
+
+.task-content .icons i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.ri-delete-bin-5-fill {
+  color: #b50000;
+}
+.ri-edit-2-fill {
+  color: #0000ff;
+}
+.ri-checkbox-circle-fill {
+  color: #ffffff;
+}
+.active{
+  color: #007508;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 650px;
+  }
+}
